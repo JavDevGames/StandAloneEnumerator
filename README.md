@@ -7,16 +7,18 @@ To use StandAloneEnumerator, open a command prompt or terminal and run the execu
 ```
 StandAloneEnumerator.exe --path <directory_path> --strategy <strategy_name> --threads <thread_count>
 ```
-Replace <directory_path> with the path of the directory you want to enumerate.
+Replace **<directory_path>** with the path of the directory you want to enumerate.
 
-Replace <strategy_name> with one of the following strategies:
+Replace **<strategy_name>** with one of the following strategies:
 
-*enumerate_wstring*: Enumerate files in the directory using wide string support.
-*enumerate_string*: Enumerate files in the directory using narrow string support.
-*enumerate_parallel_wstring*: Enumerate files in the directory using wide string support with parallel processing.
-*enumerate_parallel_string*: Enumerate files in the directory using narrow string support with parallel processing.
+**enumerate_wstring**: Enumerate files in the directory using wide string support.
+**enumerate_string**: Enumerate files in the directory using narrow string support.
 
-Replace <thread_count> with the number of threads you want to use for parallel processing (applicable only for parallel strategies).
+**enumerate_parallel_wstring**: Enumerate files in the directory using wide string support with parallel processing.
+
+**enumerate_parallel_string**: Enumerate files in the directory using narrow string support with parallel processing.
+
+Replace **<thread_count>** with the number of threads you want to use for parallel processing (applicable only for parallel strategies).
 
 Options
 --path <directory_path>: Specifies the directory path to enumerate.
@@ -25,7 +27,7 @@ Options
 
 ## Example
 ```
-StandAloneEnumerator.exe --path C:\MyDirectory --strategy enumerate_parallel_wstring --threads 4
+StandAloneEnumerator.exe --path C:\MyDirectory --strategy enumerate_parallel_string --threads 4
 ```
 This command will enumerate files in the directory C:\MyDirectory using the parallel wide string strategy with 4 threads.
 
